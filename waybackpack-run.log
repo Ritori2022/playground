@@ -1,0 +1,19 @@
+INFO:waybackpack.session: Connection error
+INFO:waybackpack.session: Waiting 5 second(s) before retrying.
+INFO:waybackpack.session: Connection error
+INFO:waybackpack.session: Waiting 5 second(s) before retrying.
+INFO:waybackpack.session: Connection error
+INFO:waybackpack.session: Waiting 5 second(s) before retrying.
+INFO:waybackpack.session: Connection error
+INFO:waybackpack.session: Waiting 5 second(s) before retrying.
+INFO:waybackpack.session: Maximum retries reached, skipping.
+Traceback (most recent call last):
+  File "/usr/local/bin/waybackpack", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/waybackpack/cli.py", line 142, in main
+    snapshots = search(
+                ^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/waybackpack/cdx.py", line 31, in search
+    raise WaybackpackException("Difficulty connecting to Wayback Machine CDX API")
+waybackpack.cdx.WaybackpackException: Difficulty connecting to Wayback Machine CDX API
